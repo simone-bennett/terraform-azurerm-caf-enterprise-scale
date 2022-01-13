@@ -17,7 +17,7 @@ variable "root_parent_id" {
 variable "root_id" {
   type        = string
   description = "If specified, will set a custom Name (ID) value for the Enterprise-scale \"root\" Management Group, and append this to the ID for all core Enterprise-scale Management Groups."
-  default     = "es"
+  default     = "72f988bf-86f1-41af-91ab-2d7cd011db47"
 
   validation {
     condition     = can(regex("^[a-zA-Z0-9-]{2,10}$", var.root_id))
@@ -490,7 +490,7 @@ variable "template_file_variables" {
 variable "default_location" {
   type        = string
   description = "If specified, will set the Azure region in which region bound resources will be deployed. Please see: https://azure.microsoft.com/en-gb/global-infrastructure/geographies/"
-  default     = "eastus"
+  default     = "australiaeast"
 }
 
 variable "default_tags" {
